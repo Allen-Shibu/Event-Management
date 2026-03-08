@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function LoginPage() {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 px-6 py-12 relative overflow-hidden">
@@ -9,10 +11,13 @@ export default function LoginPage() {
             <div className="w-full max-w-[520px] flex flex-col items-center relative z-10 my-auto">
                 {/* Logo */}
                 <div className="flex items-center gap-4 mb-12">
-                    <svg width="40" height="32" viewBox="0 0 33 27" fill="#2B8CEE">
-                        <path d="M16.5 27L6 21.3V12.3L0 9L16.5 0L33 9V21H30V10.65L27 12.3V21.3L16.5 27ZM16.5 14.55L26.775 9L16.5 3.45L6.225 9L16.5 14.55ZM16.5 23.5875L24 19.5375V13.875L16.5 18L9 13.875V19.5375L16.5 23.5875Z" />
+                    <svg viewBox="0 0 100 100" className="w-12 h-12 text-primary fill-current">
+                        <path d="M 30 20 C 10 30, 10 70, 30 80 C 50 90, 70 80, 80 60 C 65 75, 40 75, 25 55 C 15 40, 20 25, 30 20 Z" />
+                        <path d="M 70 80 C 90 70, 90 30, 70 20 C 50 10, 30 20, 20 40 C 35 25, 60 25, 75 45 C 85 60, 80 75, 70 80 Z" />
                     </svg>
-                    <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">CampusEvents</h2>
+                    <h2 className="text-4xl font-extrabold tracking-tight">
+                        <span className="text-black">Open</span> <span className="text-primary">Orbit</span>
+                    </h2>
                 </div>
 
                 {/* Card */}
@@ -103,16 +108,13 @@ export default function LoginPage() {
 
                         {/* Bottom Actions Group */}
                         <div className="flex flex-col gap-3">
-                            {/* Request Access Banner */}
-                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center">
-                                <span className="text-base text-slate-600">Looking to organize an event? </span>
-                                <a href="#" className="text-base font-extrabold text-primary no-underline hover:underline inline-flex items-center gap-1">
-                                    Request access
-                                    <svg width="10" height="10" viewBox="0 0 8 8" fill="#2B8CEE">
-                                        <path d="M6.09 4.5H0V3.5H6.09L3.29.7L4 0L8 4L4 8L3.29 7.3L6.09 4.5Z" />
-                                    </svg>
-                                </a>
-                            </div>
+                            {/* Register Redirect */}
+                            <p className="text-center text-base text-slate-600">
+                                Don't have an account?{' '}
+                                <Link to="/" className="font-bold text-primary no-underline hover:underline">
+                                    Sign up
+                                </Link>
+                            </p>
 
                             {/* Admin Login Link */}
                             <div className="text-center">

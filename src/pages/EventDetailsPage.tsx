@@ -1,7 +1,7 @@
 import Header from '../components/shared/Header'
 import Footer from '../components/shared/Footer'
 
-const tags = ['Indonesia event', 'Jaskaran event', 'UI', 'Jaskaran event', 'Seminar', 'Jaskaran event']
+const tags = ['Panel Discussion', "Women's Day", 'Inspiration', 'Career', 'Leadership']
 
 export default function EventDetailsPage() {
     return (
@@ -9,10 +9,10 @@ export default function EventDetailsPage() {
             <Header />
 
             {/* Hero Section */}
-            <div className="relative w-full bg-slate-900">
+            <div className="relative w-full bg-slate-900 border-b border-white/10">
                 <div className="absolute inset-0">
                     <img src="/image-001.png" alt="Event" className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 bg-black/60 lg:bg-black/40" />
+                    <div className="absolute inset-0 bg-black/60 lg:bg-black/50" />
                 </div>
 
                 <div className="relative z-10 max-w-[1280px] mx-auto px-6 sm:px-8 lg:px-12 pt-24 pb-12 lg:h-[600px] flex flex-col lg:flex-row lg:items-end justify-between gap-10">
@@ -24,21 +24,21 @@ export default function EventDetailsPage() {
 
                     {/* Title Overlay */}
                     <div className="max-w-xl lg:mb-16 mt-8 lg:mt-0">
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-3 sm:mb-4">Dream world wide in jakatra</h1>
-                        <h2 className="text-xl sm:text-2xl lg:text-3xl text-white font-normal mb-4 sm:mb-5">IIIT Sonepat</h2>
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-3 sm:mb-4">Women's Day Panel Discussion</h1>
+                        <h2 className="text-xl sm:text-2xl lg:text-3xl text-white font-normal mb-4 sm:mb-5">arch.ai</h2>
                         <p className="text-sm sm:text-base text-white/90 leading-relaxed max-w-md">
-                            DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender.
+                            Hear from inspiring women leaders building impactful careers in tech and innovation.
                         </p>
                     </div>
 
                     {/* Date Card */}
                     <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 w-full md:w-[400px] lg:w-[385px] lg:absolute lg:top-[260px] lg:right-12 xl:right-12 shrink-0">
                         <h3 className="text-xl sm:text-2xl text-black font-semibold mb-3 sm:mb-4">Date &amp; time</h3>
-                        <p className="text-base sm:text-lg text-gray-text mb-3">Saturday, March 18 2023, 9.30PM</p>
+                        <p className="text-base sm:text-lg text-gray-text mb-3">March 8, Sunday, 10 a.m. to 12 p.m.</p>
                         <a href="#" className="text-sm sm:text-base text-primary font-medium no-underline hover:underline block mb-5 sm:mb-6">Add to calendar</a>
-                        <button className="w-full bg-primary text-white py-3.5 sm:py-4 rounded-full text-base font-semibold cursor-pointer border-none hover:opacity-90 transition-opacity shadow-lg shadow-primary/20">
-                            Register
-                        </button>
+                        <a href="https://forms.gle/3QMkovCen9WahB428" target="_blank" rel="noopener noreferrer" className="w-full flex justify-center bg-primary text-white py-3.5 sm:py-4 rounded-full text-base font-semibold cursor-pointer border-none no-underline hover:bg-primary-dark transition-colors shadow-lg shadow-primary/20">
+                            Register Now
+                        </a>
                     </div>
                 </div>
             </div>
@@ -50,11 +50,11 @@ export default function EventDetailsPage() {
                     <div className="flex flex-col gap-8 lg:gap-10">
                         <div>
                             <h2 className="text-2xl font-semibold text-black mb-4">Description</h2>
-                            <p className="text-base text-gray-text leading-relaxed">
-                                DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement.
-                            </p>
-                            <p className="text-base text-gray-text leading-relaxed mt-5">
-                                DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users.
+                            <p className="text-base text-gray-text leading-relaxed whitespace-pre-wrap">
+                                If you stood by a beach and no one went in the water , would you? Maybe...or maybe not . But seeing someone else go in first changes everything.{"\n\n"}
+                                Some things are like that . They might seem too hard to reach until someone shows us they can be done.{"\n\n"}
+                                As a Women's day gift ,our amazing seniors are joining us to share their inspiring journeys.They once stood exactly where we are now , faced similar challenges, and made the most of the opportunities and choices they had.{"\n\n"}
+                                No matter where you are in your journey, this session might be where everything falls into place.✨
                             </p>
                         </div>
 
@@ -62,19 +62,15 @@ export default function EventDetailsPage() {
                             <h2 className="text-2xl font-semibold text-black mb-4">Hours</h2>
                             <div className="flex flex-col gap-3">
                                 <div className="flex items-center gap-3">
-                                    <span className="text-base text-gray-text">Weekdays hour:</span>
-                                    <span className="text-lg text-primary font-medium">7PM - 10PM</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <span className="text-base text-gray-text">Sunday hour:</span>
-                                    <span className="text-lg text-primary font-medium">7PM - 10PM</span>
+                                    <span className="text-base text-gray-text">Sunday:</span>
+                                    <span className="text-lg text-primary font-medium">10 a.m. - 12 p.m.</span>
                                 </div>
                             </div>
                         </div>
 
                         <div>
                             <h2 className="text-2xl font-semibold text-black mb-3">Organizer Contact</h2>
-                            <p className="text-base text-gray-text">Organizer Name : Phone Number</p>
+                            <p className="text-base text-gray-text">arch.ai Team</p>
                         </div>
                     </div>
 
@@ -85,8 +81,8 @@ export default function EventDetailsPage() {
                             <div className="rounded-2xl overflow-hidden mb-5">
                                 <img src="/image-002.png" alt="Event location map" className="w-full h-[280px] object-cover rounded-2xl" />
                             </div>
-                            <h3 className="text-xl text-dark font-medium mb-2">Dream world wide in jakatra</h3>
-                            <p className="text-base text-gray-text">Dummy location generation model by RSU ... Our approach generates more realistic dummy locations</p>
+                            <h3 className="text-xl text-dark font-medium mb-2">Gloria Gopikumar Hall</h3>
+                            <p className="text-base text-gray-text">Join us for the panel discussion at the Gloria Gopikumar Hall.</p>
                         </div>
 
                         <div>

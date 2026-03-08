@@ -15,11 +15,14 @@ export default function SignUpPage() {
 
                 {/* Left Panel Content */}
                 <div className="absolute inset-0 flex flex-col justify-end p-16 xl:p-24 text-white">
-                    <div className="flex items-center gap-3 mb-8">
-                        <svg width="33" height="27" viewBox="0 0 33 27" fill="white">
-                            <path d="M16.5 27L6 21.3V12.3L0 9L16.5 0L33 9V21H30V10.65L27 12.3V21.3L16.5 27ZM16.5 14.55L26.775 9L16.5 3.45L6.225 9L16.5 14.55ZM16.5 23.5875L24 19.5375V13.875L16.5 18L9 13.875V19.5375L16.5 23.5875Z" />
+                    <div className="flex items-center gap-3 mb-8 bg-white/90 w-fit px-4 py-2 rounded-2xl backdrop-blur-sm">
+                        <svg viewBox="0 0 100 100" className="w-10 h-10 text-primary fill-current">
+                            <path d="M 30 20 C 10 30, 10 70, 30 80 C 50 90, 70 80, 80 60 C 65 75, 40 75, 25 55 C 15 40, 20 25, 30 20 Z" />
+                            <path d="M 70 80 C 90 70, 90 30, 70 20 C 50 10, 30 20, 20 40 C 35 25, 60 25, 75 45 C 85 60, 80 75, 70 80 Z" />
                         </svg>
-                        <h2 className="text-3xl font-bold">CampusEvents</h2>
+                        <h2 className="text-4xl font-extrabold tracking-tight">
+                            <span className="text-black">Open</span> <span className="text-primary">Orbit</span>
+                        </h2>
                     </div>
                     <h1 className="text-5xl lg:text-6xl font-extrabold leading-[1.15] mb-6">
                         Your Gateway to<br />Campus Life.
@@ -165,6 +168,17 @@ export default function SignUpPage() {
                             Log in
                         </Link>
                     </p>
+
+                    {/* Request Access Banner */}
+                    <div className="mt-8 bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center">
+                        <span className="text-base text-slate-600">Looking to organize an event? </span>
+                        <a href="#" className="text-base font-extrabold text-primary no-underline hover:underline inline-flex items-center gap-1">
+                            Request access
+                            <svg width="10" height="10" viewBox="0 0 8 8" fill="#2B8CEE">
+                                <path d="M6.09 4.5H0V3.5H6.09L3.29.7L4 0L8 4L4 8L3.29 7.3L6.09 4.5Z" />
+                            </svg>
+                        </a>
+                    </div>
 
                     {/* Footer Links */}
                     <div className="flex justify-center gap-8 mt-6">

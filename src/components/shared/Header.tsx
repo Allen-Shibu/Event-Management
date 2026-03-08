@@ -8,10 +8,13 @@ export function LoggedOutHeader() {
             <div className="max-w-[1280px] mx-auto px-5 sm:px-8 lg:px-12 py-4 flex items-center justify-between w-full">
                 {/* Logo */}
                 <Link to="/" className="no-underline flex items-center gap-2.5 shrink-0">
-                    <svg width="26" height="21" viewBox="0 0 33 27" fill="#2B8CEE" className="shrink-0">
-                        <path d="M16.5 27L6 21.3V12.3L0 9L16.5 0L33 9V21H30V10.65L27 12.3V21.3L16.5 27ZM16.5 14.55L26.775 9L16.5 3.45L6.225 9L16.5 14.55ZM16.5 23.5875L24 19.5375V13.875L16.5 18L9 13.875V19.5375L16.5 23.5875Z" />
+                    <svg viewBox="0 0 100 100" className="w-8 h-8 text-primary fill-current shrink-0">
+                        <path d="M 30 20 C 10 30, 10 70, 30 80 C 50 90, 70 80, 80 60 C 65 75, 40 75, 25 55 C 15 40, 20 25, 30 20 Z" />
+                        <path d="M 70 80 C 90 70, 90 30, 70 20 C 50 10, 30 20, 20 40 C 35 25, 60 25, 75 45 C 85 60, 80 75, 70 80 Z" />
                     </svg>
-                    <span className="hidden sm:inline text-xl font-bold text-slate-900">CampusEvents</span>
+                    <span className="hidden sm:inline text-xl font-extrabold tracking-tight">
+                        <span className="text-black">Open</span> <span className="text-primary">Orbit</span>
+                    </span>
                 </Link>
 
                 {/* Auth Buttons */}
@@ -57,10 +60,13 @@ export default function Header() {
 
                 {/* Logo — far left */}
                 <Link to="/dashboard" className="no-underline flex items-center gap-2.5 shrink-0">
-                    <svg width="26" height="21" viewBox="0 0 33 27" fill="#2B8CEE" className="shrink-0">
-                        <path d="M16.5 27L6 21.3V12.3L0 9L16.5 0L33 9V21H30V10.65L27 12.3V21.3L16.5 27ZM16.5 14.55L26.775 9L16.5 3.45L6.225 9L16.5 14.55ZM16.5 23.5875L24 19.5375V13.875L16.5 18L9 13.875V19.5375L16.5 23.5875Z" />
+                    <svg viewBox="0 0 100 100" className="w-8 h-8 text-primary fill-current shrink-0">
+                        <path d="M 30 20 C 10 30, 10 70, 30 80 C 50 90, 70 80, 80 60 C 65 75, 40 75, 25 55 C 15 40, 20 25, 30 20 Z" />
+                        <path d="M 70 80 C 90 70, 90 30, 70 20 C 50 10, 30 20, 20 40 C 35 25, 60 25, 75 45 C 85 60, 80 75, 70 80 Z" />
                     </svg>
-                    <span className="hidden sm:inline text-xl font-bold text-slate-900">CampusEvents</span>
+                    <span className="hidden sm:inline text-xl font-extrabold tracking-tight">
+                        <span className="text-black">Open</span> <span className="text-primary">Orbit</span>
+                    </span>
                 </Link>
 
                 {/* Nav Links */}
