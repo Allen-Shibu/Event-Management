@@ -10,3 +10,4 @@ Live Site: https://openorbit-ten.vercel.app
 - [Dashboard](https://openorbit-ten.vercel.app/dashboard) — `/dashboard`
 - [Explore](https://openorbit-ten.vercel.app/explore) — `/explore`
 - [Create Event](https://openorbit-ten.vercel.app/create-event) — `/create-event`
+- [Event Details](https://openorbit-ten.vercel.app/event/1) — `/event-details`
