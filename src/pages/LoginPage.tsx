@@ -101,28 +101,30 @@ export default function LoginPage() {
                             </div>
                         </div>
 
-                        {/* Request Access Banner */}
-                        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center">
-                            <span className="text-base text-slate-600">Looking to organize an event? </span>
-                            <a href="#" className="text-base font-extrabold text-primary no-underline hover:underline inline-flex items-center gap-1">
-                                Request access
-                                <svg width="10" height="10" viewBox="0 0 8 8" fill="#2B8CEE">
-                                    <path d="M6.09 4.5H0V3.5H6.09L3.29.7L4 0L8 4L4 8L3.29 7.3L6.09 4.5Z" />
-                                </svg>
-                            </a>
+                        {/* Bottom Actions Group */}
+                        <div className="flex flex-col gap-3">
+                            {/* Request Access Banner */}
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center">
+                                <span className="text-base text-slate-600">Looking to organize an event? </span>
+                                <a href="#" className="text-base font-extrabold text-primary no-underline hover:underline inline-flex items-center gap-1">
+                                    Request access
+                                    <svg width="10" height="10" viewBox="0 0 8 8" fill="#2B8CEE">
+                                        <path d="M6.09 4.5H0V3.5H6.09L3.29.7L4 0L8 4L4 8L3.29 7.3L6.09 4.5Z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            {/* Admin Login Link */}
+                            <div className="text-center">
+                                <a href="#" className="text-sm font-medium text-slate-500 no-underline hover:text-primary transition-colors">
+                                    Login as a admin →
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Footer */}
-            <div className="absolute bottom-4 sm:bottom-8 w-full flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-xs sm:text-sm text-slate-500 z-10 px-4 text-center">
-                <span>© 2024 CampusEvents. All Rights Reserved.</span>
-                <span className="hidden sm:inline opacity-50">•</span>
-                <a href="#" className="text-slate-500 no-underline hover:text-primary transition-colors">Privacy Policy</a>
-                <span className="opacity-50">•</span>
-                <a href="#" className="text-slate-500 no-underline hover:text-primary transition-colors">Terms of Service</a>
-            </div>
         </div>
     )
 }

@@ -36,7 +36,7 @@ export default function EventDetailsPage() {
                         <h3 className="text-xl sm:text-2xl text-black font-semibold mb-3 sm:mb-4">Date &amp; time</h3>
                         <p className="text-base sm:text-lg text-gray-text mb-3">Saturday, March 18 2023, 9.30PM</p>
                         <a href="#" className="text-sm sm:text-base text-primary font-medium no-underline hover:underline block mb-5 sm:mb-6">Add to calendar</a>
-                        <button className="w-full bg-orange-500 text-white py-3.5 sm:py-4 rounded-full text-base font-semibold cursor-pointer border-none hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/25">
+                        <button className="w-full bg-primary text-white py-3.5 sm:py-4 rounded-full text-base font-semibold cursor-pointer border-none hover:opacity-90 transition-opacity shadow-lg shadow-primary/20">
                             Register
                         </button>
                     </div>

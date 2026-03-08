@@ -4,9 +4,10 @@ interface EventCardProps {
     title: string
     organizer: string
     image: string
+    accentRegister?: boolean
 }
 
-export default function EventCard({ title, organizer, image }: EventCardProps) {
+export default function EventCard({ title, organizer, image, accentRegister }: EventCardProps) {
     return (
         <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 flex-1 min-w-[300px]">
             <div className="relative">
@@ -38,7 +39,7 @@ export default function EventCard({ title, organizer, image }: EventCardProps) {
                     </Link>
                     <Link
                         to="/event/1"
-                        className="bg-orange-500 text-white text-sm font-semibold px-6 py-2.5 rounded-full no-underline hover:bg-orange-600 transition-colors"
+                        className={`text-white text-sm font-semibold px-6 py-2.5 rounded-full no-underline hover:opacity-90 transition-opacity ${accentRegister ? 'bg-orange-500' : 'bg-primary'}`}
                     >
                         Register
                     </Link>
