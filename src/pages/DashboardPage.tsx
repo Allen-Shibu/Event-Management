@@ -14,14 +14,14 @@ const bannerSlides = [
     {
         type: 'event' as const,
         image: '/image-001.png',
-        title: 'Dream World Wide — Jakarta',
-        deadline: 'Register by April 2, 2024',
+        title: "Women's Day Panel Discussion",
+        deadline: 'Register by March 8, 2026',
     },
     {
         type: 'event' as const,
         image: '/image-008.png',
         title: 'Cultural Fest: Colors of Spring',
-        deadline: 'Register by March 30, 2024',
+        deadline: 'Register by March 30, 2026',
     },
 ]
 
@@ -92,9 +92,7 @@ export default function DashboardPage() {
                                     {bannerSlides[activeSlide].title}
                                 </h2>
                                 <p className="text-sm sm:text-base text-white/80 font-medium flex items-center gap-2">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 opacity-70">
-                                        <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
-                                    </svg>
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="shrink-0 opacity-70" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                                     {'deadline' in bannerSlides[activeSlide] ? bannerSlides[activeSlide].deadline : ''}
                                 </p>
                             </div>
